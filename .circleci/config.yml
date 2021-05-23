@@ -9,6 +9,7 @@ jobs:
       - run:
           name: terraform init & plan
           command: |
+            ls -l 
             pwd
             terraform init -input=false
             terraform plan -out tfapply
