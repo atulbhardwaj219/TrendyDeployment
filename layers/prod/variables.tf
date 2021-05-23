@@ -1,11 +1,7 @@
 #Common variables
 
-variable "region" 
+variable "region" {
    type 	   = string
    description = "Region for aws"
-}
-
-variable "terraform_version" {
-  type = string
 }
 
