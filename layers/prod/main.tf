@@ -1,7 +1,7 @@
 
 terraform {
   
-  required_version = "${var.terraform_version}"
+  required_version = "0.11.15"
 
   backend "s3" {
     bucket = "terrafroms3trendy"
@@ -13,7 +13,7 @@ terraform {
 
 
 # Configure the AWS Provider
-provider "aws" {
+  provider "aws" {
   region = "${var.region}"
 }
 
