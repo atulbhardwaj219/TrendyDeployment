@@ -1,3 +1,5 @@
+
+
 resource "aws_ecrpublic_repository" "public" {
   repository_name = "Build"
 
@@ -6,4 +8,6 @@ resource "aws_ecrpublic_repository" "public" {
     architectures     = ["ARM"]
     description       = "Description"
     operating_systems = ["Linux"]
+}
+
 }

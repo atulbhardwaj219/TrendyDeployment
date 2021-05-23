@@ -1,6 +1,6 @@
 #Common variables
 
-variable "region" 
+variable "region" {
    type 		   = string
    descripyion = "Region for aws"
 }
