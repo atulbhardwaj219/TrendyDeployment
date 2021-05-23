@@ -6,7 +6,7 @@ terraform {
   backend "s3" {
     bucket = "terrafroms3trendy"
     key    = "production.tfstate"
-    region = "ap-southeast-1"
+    region = "ap-south-1"
   }
 }
 
