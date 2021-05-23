@@ -8,6 +8,6 @@ resource "aws_ecr_repository" "public" {
 
 resource "aws_ecrpublic_repository" "publics" {
  
-  name = "builds-containers"
+  repository_name = "builds-containers"
 
 }
