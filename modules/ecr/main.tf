@@ -1,4 +1,6 @@
 
 resource "aws_ecr_repository" "public" {
-  name = "Build-containers"
+ 
+  name = "build-containers"
+
 }
