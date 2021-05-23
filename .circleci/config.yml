@@ -10,11 +10,12 @@ jobs:
           name: terraform init & plan
           command: |
             ls -l 
+            cd layers/prod
             pwd
             terraform init -input=false
             terraform plan -out tfapply
       - persist_to_workspace:
-          root: layers/
+          root: .
           paths:
             - .
 
