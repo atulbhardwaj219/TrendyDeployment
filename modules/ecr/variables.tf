@@ -2,5 +2,5 @@
 
 variable "region" {
    type 		   = string
-   descripyion = "Region for aws"
+   description = "Region for aws"
 }
