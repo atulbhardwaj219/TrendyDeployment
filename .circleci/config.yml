@@ -1,5 +1,16 @@
 version: 2
 jobs:
+  
+  commands:
+  sayhello:
+    description: "A very simple command for demonstration purposes"
+    parameters:
+      to:
+        type: string
+        default: "Hello World"
+    steps:
+      - run: pwd
+
   plan-apply:
     working_directory: /tmp/project/layers/prod/
     docker:
@@ -60,6 +71,7 @@ workflows:
   version: 2
   plan_approve_apply:
     jobs:
+      - commands
       - plan-apply
       - hold-apply:
           type: approval
