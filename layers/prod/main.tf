@@ -1,7 +1,7 @@
 
 terraform {
   
-  required_version = "0.11.15"
+  required_version = "0.15.4"
 
   backend "s3" {
     bucket = "terrafroms3trendy"
